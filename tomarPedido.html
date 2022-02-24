@@ -10,16 +10,21 @@
 </head>
 <body>
     <header> 
-        <nav class="nav-main">
-            <a href="index.html"><img src="img/brand.png" alt="logo tienda" class="nav-brand"></a>
-            <aside class="nUser"><p>La mejor tienda del mundo</p></aside>
-            <a href=""><img src="img/historia.jpg" alt="perfil usuario" class="fUser"></a>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/brand.png" alt="logo tienda"></a>
+            </div>
+            <div class="tituloNav"><p>La mejor tienda del mundo</p></div>
+            <div class="fUser">
+                <a href=""><img src="img/historia.jpg" alt="perfil usuario"></a>
+            </div>
         </nav>
     </header>
+
     <article class="datos">
-        <section class="cComprador">
-            <div><img src="img/deku.jpg" class="fComprador"></div>
-            <div class="producto">
+        <section class="comprador">
+            <div><img src="img/deku.jpg"></div>
+            <div>
                 <ul>
                     <h3>Perfil Para Nada Falso</h3>
                     <p>Cédula: 1234567892</p>
@@ -31,44 +36,41 @@
             </div>
         </section>
 
-        <section class="cPedido">
+        <section class="factura">
             <ul>
-                <h2>Resumen: </h2>
+                <h2>Resumen:</h2>
                 <div class="producto">
-                    <div><img src="img/nezuko.jpg" class="fproducto"></div>
+                    <div><img src="img/nezuko.jpg"></div>
                     <div> 
                         <h1> Nezuko | 4</h1>
                         <p>Precio: $100.000</p>
                     </div>
                 </div>
                 <div class="producto">
-                    <div><img src="img/kira.jpg" class="fproducto"></div>
+                    <div><img src="img/kira.jpg"></div>
                     <div> 
                         <h1> Kira | 1</h1>
                         <p>Precio: $20.000</p>
                     </div>
                 </div>
                 <div class="producto">
-                    <div><img src="img/levi.jpg" class="fproducto"></div>
+                    <div><img src="img/levi.jpg"></div>
                     <div> 
                         <h1> Levi | 3</h1>
                         <p>Precio: $60.000</p>
                     </div>
                 </div>
-                <div>
-                    <p>Costo del envio: $15.000</p>
+                <div class="facFooter"> 
+                    <p>Envio: $15.000</p>
                     <h1>Total: $195.000</h1>
                 </div>
-                <div class="botonera">
-                    
-                    <form>
-                        <a href="pedidos.html">
-                            <input type="button" value="Cancelar" class="botonV1"> 
-                        </a>
-                        <a href="index.html">
-                            <input type="button" value="Facturar" class="botonV1"> 
-                        </a>
-                    </form>
+                <div class="facFooter"> 
+                    <a href="pedidos.html">
+                        <button class="boton">Cancelar</button>
+                    </a>
+                    <a href="index.html">
+                        <button class="boton">Facturar</button>
+                    </a>
                 </div>
             </ul>
 
