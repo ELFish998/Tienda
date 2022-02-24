@@ -1,13 +1,31 @@
 .contenido{
-    width: 90%;
+    width: 60%;
     margin: auto;
     display: flex;
     height: 25%;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
 }
 .datosComprador{
+    
     border: 2px solid rgb(138, 244, 252);
     background-color: rgb(212, 249, 252);
+    width: 450px;
+    height: 500px;
+    
+}
+.resumenPedido{
+    width: 450px;
+    height: 500px;
+    margin:10px;
+    border: 2px solid rgb(138, 244, 252);
+    background-color: rgb(212, 249, 252);
+}
+
+@media  (max-width: 950px)
+{
+    .contenido{
+        display: block;
+    }
     
 }
