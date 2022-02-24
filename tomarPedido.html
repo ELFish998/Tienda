@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="styleVendedor.css">
 </head>
 <body>
-    <header class="container"> 
+    <header> 
         <nav class="nav-main">
             <a href="index.html"><img src="img/brand.png" alt="logo tienda" class="nav-brand"></a>
-            <aside class="slogan"><p>La mejor tienda del mundo</p></aside>
-            <aside class="nUser"><p>Juanito Alimaña</p></aside>
+            <aside class="nUser"><p>La mejor tienda del mundo</p></aside>
             <a href=""><img src="img/historia.jpg" alt="perfil usuario" class="fUser"></a>
+            <aside class="nUser"><p>Juanito Alimaña</p></aside>
         </nav>
     </header>
     <article class="datos">
         <section class="cComprador">
-                 <div><img src="img/deku.jpg" class="fComprador"></div>
+            <div><img src="img/deku.jpg" class="fComprador"></div>
+            <div class="producto">
                 <ul>
                     <h3>Perfil Para Nada Falso</h3>
                     <p>Cédula: 1234567892</p>
@@ -28,7 +29,9 @@
                     <p>Telefono: 3154697850</p>
                     <p>Método: Efectivo</p>
                 </ul>
+            </div>
         </section>
+
         <section class="cPedido">
             <ul>
                 <h2>Resumen: </h2>
@@ -38,22 +41,33 @@
                         <h1> Nezuko | 4</h1>
                         <p>Precio: $100.000</p>
                     </div>
-                        
-                    
                 </div>
-                <div>
-                    <ul>
+                <div class="producto">
+                    <div><img src="img/kira.jpg" class="fproducto"></div>
+                    <div> 
                         <h1> Kira | 1</h1>
                         <p>Precio: $20.000</p>
-                    </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul>
+                <div class="producto">
+                    <div><img src="img/levi.jpg" class="fproducto"></div>
+                    <div> 
                         <h1> Levi | 3</h1>
                         <p>Precio: $60.000</p>
-                    </ul>
+                    </div>
+                </div>
+                <div>
+                    <p>Costo del envio: $15.000</p>
+                    <h1>Total: $195.000</h1>
+                </div>
+                <div class="botonera">
+                    <form>
+                        <input type="button" value="Cancelar">
+                        <input type="button" value="Facturar">
+                    </form>
                 </div>
             </ul>
+
         </section>
     </article>
 </body>
