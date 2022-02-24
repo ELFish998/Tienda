@@ -1,15 +1,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
 }
-.nav-main{
-    font-size: 17px;
-    display: flex;
-    justify-content:start;
-    height: 60px;
-    padding: 20px;
-    background: #6fc4b8 ;
+header{
+    height: 60px; padding: 20px;
+    background-color: darkturquoise ;
+}
+nav{
     display: grid;
-    grid-template-columns: 5% 80% 5%;
+    grid-template-columns: 10% 75% 5%;
 }
 .nav-brand{
     width: 60px;
@@ -19,14 +18,13 @@ body{
     width:60px;
     border-radius: 25px;
 }
-
 .datos{
     display: flex;
     justify-content:space-evenly;
     margin-top: 50px;   
 }
 .cComprador{
-    background-color: #abdfd8; /* darkturquoise;*/
+    background-color: #abdfd8; 
     width: 30%; height: 25%;
     border-radius: 25px;
 }
@@ -69,8 +67,6 @@ body{
 }
 .botonV1:hover{
     background-color: #62bdb1 ;
-    width: 110px;
-    height: 60px;
 }
 .lspedidos{
     display: grid;
@@ -105,6 +101,86 @@ body{
     background-color: #62bdb1 ;
 }
 
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    margin: 50px;
+}
+
+.tarjetas section{
+    display: flex;
+    width: 90%; height: 120px ; margin: 10px;
+    background-color: rgb(226, 231, 229);
+    border-radius: 10px;
+}
+
+.tarjetas aside{
+    margin-left: 5%;
+}
+
+.tarjetas img{
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    height: 120px;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content:space-around;
+}
+
+.stats section{
+    display: flex;
+    width: 90%; height: 400px ; margin: 5%;
+    background-color: rgb(226, 231, 229);
+    border-radius: 10px;
+}
+
+.topproductos{
+    margin: 5%;
+}
+.topproductos section{
+    border-radius: 10px;
+    background-color: rgb(226, 231, 229);
+}
+.topproductos table{
+    width: 100%;
+}
+
+.topproductos .headerTop, .bodyTop{
+    padding: .5rem;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topproductos table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.topproductos tr{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.topproductos td{
+    padding: .5rem 1rem; /* y - x */
+}
+
+.topproductos thead td{
+    font-weight: 700;
+}
 
 /* ---  Responsive   */
 
@@ -119,4 +195,22 @@ body{
     .cPedido{
         width: 80%; height: 15%; margin: 10%;
     }
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        margin: 50px;
+    }
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+    }
 }
+
+@media (max-width: 600px) {
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin: 50px;
+    }
+}
+
