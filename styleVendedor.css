@@ -1,12 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .nav-main{
     font-size: 17px;
     display: flex;
     justify-content:start;
     height: 60px;
     padding: 20px;
-    background: #CBFAF4 ;
+    background: #6fc4b8 ;
     display: grid;
-    grid-template-columns: 60px 70% 60px 100px;
+    grid-template-columns: 5% 80% 5%;
 }
 .nav-brand{
     width: 60px;
@@ -23,8 +26,8 @@
     margin-top: 50px;   
 }
 .cComprador{
-    background-color: darkturquoise;
-    width: 30%; height: 15%;
+    background-color: #abdfd8; /* darkturquoise;*/
+    width: 30%; height: 25%;
     border-radius: 25px;
 }
 .fComprador{
@@ -34,7 +37,7 @@
 }
 .cPedido{
     background-color: aquamarine;
-    width: 30%; height: 15%;
+    width: 30%; height: 25%;
     border-radius: 25px;
 }
 
@@ -56,22 +59,54 @@
     align-items: center;
 }
 
-/* ---  Responsive   */
+.botonV1{
+    background-color: #CBFAF4 ;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: #CBFAF4;
 
-@media (max-width: 1020px) {
-    .datos{
-        display: flex;
-        justify-content:space-evenly;
-        margin-top: 50px;
-    }
-    .cPedido{
-        width: 80%; margin: 10%;
-    }
-    .cPedido{
-        width: 80%; margin: 10%;
-    }
-    
 }
+.botonV1:hover{
+    background-color: #62bdb1 ;
+    width: 110px;
+    height: 60px;
+}
+.lspedidos{
+    display: grid;
+    justify-content: center;
+}
+
+.pedido{
+    background-color: #abdfd8;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 200px 400px 200px ;
+    width: 800px; height: 220px;
+    border-radius: 25px;
+    text-align: justify;
+}
+
+.fComprador2{
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    width: 220px;
+}
+
+.botonV2{
+    background-color: #CBFAF4 ;
+    width: 200px;
+    height: 220px;
+    border-top-right-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    border: #CBFAF4;
+}
+.botonV2:hover{
+    background-color: #62bdb1 ;
+}
+
+
+/* ---  Responsive   */
 
 @media (max-width: 950px) {
     .datos{
@@ -84,7 +119,4 @@
     .cPedido{
         width: 80%; height: 15%; margin: 10%;
     }
-    
 }
-
-
