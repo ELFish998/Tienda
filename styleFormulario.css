@@ -1,0 +1,13 @@
+.contenido{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+.datosComprador{
+    border: 2px solid rgb(138, 244, 252);
+    background-color: rgb(212, 249, 252);
+    
+}
